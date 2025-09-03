@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias Do Horizonte</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center; /* Centraliza todo o texto no corpo da página */
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .container {
+            padding: 20px;
+        }
+        .highlight {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            text-align: center; /* Centraliza o texto dentro da seção de destaque */
+        }
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            text-align: left; /* Centraliza a grade, mas alinha o texto à esquerda dentro dos itens */
+        }
+        .news-item {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            text-align: left; /* Alinha o texto à esquerda dentro dos itens de notícia */
+        }
+        .news-item h2 {
+            margin-top: 0;
+        }
+        @media (max-width: 600px) {
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #000000;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #00b232;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Notícias do Horizonte</h1>
+    </header>
+    <nav><A href="sobre.html">Sobre nós</A>
+        <a href="contato.html">Contato</a>
+    </nav>
+    <div class="container">
+        <div class="highlight">
+            <h2>Principal Notícia do Dia</h2>
+            <p>Previdência Social ultrapassa R$ 1 trilhão no Orçamento de 2026
+Segunda maior fatia é para o Ministério da Saúde, com R$ 245,5 bilhões para o custeio do SUS, incluindo programas como o Mais Médicos e a implantação do primeiro hospital inteligente do país<p>
+            <a href="noticia1.html" class="button">Leia mais</a>
+        </div>
+        <div class="news-grid">
+            <div class="news-item">
+                <h2>Maioria das tarifas não é legal, decide tribunal de recursos dos EUA</h2>
+                <p>Trump transformou as taxas em um pilar da política externa americana em seu segundo mandato</p>
+                <a href="noticia2.html" class="button">Leia mais</a>
+            </div>
+            <div class="news-item">
+                <h2>PGR se manifesta contra polícia dentro da casa de Bolsonaro</h2>
+                <p>Paulo Gonet disse não haver necessidade de aplicar “soluções mais gravosas” que a prisão domiciliar</p>
+                <a href="noticia3.html" class="button">Leia mais</a>
+            </div>
+            <div class="news-item">
+                <h2>Megaoperação: Entenda como PCC controlava fundos de investimentos</h2>
+                <p>A magnitude do esquema é evidenciada pelos números: uma única fintech movimentou R$ 46 bilhões em quatro anos, incluindo cerca de 11 mil depósitos em espécie; a análise é de Fernando Nakagawa no CNN 360º</p>
+                <a href="noticia4.html" class="button">Leia mais</a>
+            </div>
+            <div class="news-item">
+                <h2>"Maior ação do poder público contra crime organizado", diz Receita Federal</h2>
+                <p>Para o procurador da Receita Federal, Robinson Barreirinhas, a megaoperação é um marco histórico no combate ao crime organizado</p>
+                <a href="noticia5.html" class="button">Leia mais</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
